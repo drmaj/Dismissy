@@ -5,11 +5,15 @@
 [![License](https://img.shields.io/cocoapods/l/Dismissy.svg?style=flat)](http://cocoadocs.org/docsets/Dismissy)
 [![Platform](https://img.shields.io/cocoapods/p/Dismissy.svg?style=flat)](http://cocoadocs.org/docsets/Dismissy)
 
+Dismissy is an objective-C category on UIViewController to add keyboard dismissing to all View Controllers. It automatically resigns all first responders when a user taps outside any active textfields.
+
 ## Usage
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
+
+None.
 
 ## Installation
 
