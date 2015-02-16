@@ -1,6 +1,6 @@
 # Dismissy
 
-[![CI Status](http://img.shields.io/travis/Miguel Alonso Jr./Dismissy.svg?style=flat)](https://travis-ci.org/Miguel Alonso Jr./Dismissy)
+[![CI Status](http://img.shields.io/travis/drmaj/Dismissy.svg?style=flat)](https://travis-ci.org/drmaj/Dismissy)
 [![Version](https://img.shields.io/cocoapods/v/Dismissy.svg?style=flat)](http://cocoadocs.org/docsets/Dismissy)
 [![License](https://img.shields.io/cocoapods/l/Dismissy.svg?style=flat)](http://cocoadocs.org/docsets/Dismissy)
 [![Platform](https://img.shields.io/cocoapods/p/Dismissy.svg?style=flat)](http://cocoadocs.org/docsets/Dismissy)
