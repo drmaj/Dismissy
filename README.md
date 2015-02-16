@@ -22,6 +22,14 @@ it, simply add the following line to your Podfile:
 
     pod "Dismissy"
 
+## Contributing
+
+1. Fork it ( https://github.com/drmaj/Dismissy/fork )
+2. Create your feature branch (`git checkout -b my-new-feature`)
+3. Commit your changes (`git commit -am 'Add some feature'`)
+4. Push to the branch (`git push origin my-new-feature`)
+5. Create a new Pull Request
+
 ## Author
 
 Miguel Alonso Jr., drmiguelalonsojr@gmail.com
