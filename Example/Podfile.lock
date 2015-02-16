@@ -1,0 +1,39 @@
+PODS:
+  - Dismissy (0.1.0):
+    - JRSwizzle
+  - Expecta (0.3.2)
+  - JRSwizzle (1.0)
+  - KIF (3.1.2):
+    - KIF/XCTest
+  - KIF/XCTest (3.1.2)
+  - OCHamcrest (4.1.1)
+  - OCMock (3.1.2)
+  - PivotalCoreKit/UIKit/SpecHelper/Extensions (0.2.3):
+    - PivotalCoreKit/UIKit/SpecHelper/Support
+  - PivotalCoreKit/UIKit/SpecHelper/Support (0.2.3)
+  - Specta (0.3.2)
+
+DEPENDENCIES:
+  - Dismissy (from `../`)
+  - Expecta
+  - KIF
+  - OCHamcrest
+  - OCMock
+  - PivotalCoreKit/UIKit/SpecHelper/Extensions
+  - Specta
+
+EXTERNAL SOURCES:
+  Dismissy:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Dismissy: 927e8760ae5289847560b861becbc69feb218259
+  Expecta: ee641011fe10aa1855d487b40e4976dac50ec342
+  JRSwizzle: 30da7a2c539a4ebf954b16d15f6dd8221c9f6fa5
+  KIF: 068074b24dd455025e7f2a488ba4fb07b9ce047b
+  OCHamcrest: af1c7c5ea345de69ea6c9c2958f65f3044e5c420
+  OCMock: ecdd510b73ef397f2f97274785c1e87fd147c49f
+  PivotalCoreKit: 0b60f2fa1bcdf14ece70f785ff64a588184fc54a
+  Specta: 698a58ffa5ec948327d3b92eab50ca58d7f4fbe8
+
+COCOAPODS: 0.34.4

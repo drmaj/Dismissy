@@ -1,41 +1,39 @@
-//
-//  DismissyTests.m
-//  DismissyTests
-//
-//  Created by Miguel Alonso Jr. on 02/14/2015.
-//  Copyright (c) 2014 Miguel Alonso Jr.. All rights reserved.
-//
+#import "Specs.h"
 
-SpecBegin(InitialSpecs)
+#import "MAJViewController.h"
+#import "UIViewController+dismissKeyboard.h"
 
-describe(@"these will fail", ^{
+SpecBegin(MAJViewController)
 
-    it(@"can do maths", ^{
-        expect(1).to.equal(2);
+describe(@"MAJViewController", ^{
+    __block MAJViewController *majViewController;
+
+    beforeEach(^{
+        majViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
     });
 
-    it(@"can read", ^{
-        expect(@"number").to.equal(@"string");
+    afterEach(^{
+        majViewController = nil;
     });
-    
-    it(@"will wait and fail", ^AsyncBlock {
-        
-    });
-});
 
-describe(@"these will pass", ^{
-    
-    it(@"can do maths", ^{
-        expect(1).beLessThan(23);
-    });
-    
-    it(@"can read", ^{
-        expect(@"team").toNot.contain(@"I");
-    });
-    
-    it(@"will wait and succeed", ^AsyncBlock {
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{
-            done();
+    describe(@"when a textfield is selected", ^{
+        beforeEach(^{
+            [tester waitForTimeInterval:1];
+            [tester tapViewWithAccessibilityLabel:@"textField"];
+        });
+        afterEach(^{
+        });
+        it(@"should show the keyboard", ^{
+            [tester waitForSoftwareKeyboard];
+        });
+
+        context(@"and the user taps outside the textfield", ^{
+            beforeEach(^{
+                [majViewController maj_touchesBegan:nil withEvent:nil];
+            });
+            it(@"should dismiss the keyboard", ^{
+                [tester waitForAbsenceOfSoftwareKeyboard];
+            });
         });
     });
 });

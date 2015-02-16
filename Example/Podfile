@@ -6,7 +6,11 @@ end
 
 target 'Tests', :exclusive => true do
   pod "Dismissy", :path => "../"
-
-  pod 'Specta', :git => 'https://github.com/specta/specta.git', :tag => 'v0.3.0.beta1'
+  pod 'KIF'
+  pod 'Specta'
   pod 'Expecta'
+  pod 'OCHamcrest'
+  pod 'OCMock'
+  pod 'PivotalCoreKit/UIKit/SpecHelper/Extensions'
+
 end
