@@ -9,7 +9,7 @@ describe(@"MAJViewController", ^{
     __block MAJViewController *majViewController;
 
     beforeEach(^{
-        majViewController = [UIApplication sharedApplication].delegate.window.rootViewController;
+        majViewController = (MAJViewController *)[UIApplication sharedApplication].delegate.window.rootViewController;
     });
 
     afterEach(^{
