@@ -10,12 +10,11 @@
 Pod::Spec.new do |s|
   s.name             = "Dismissy"
   s.version          = "0.1.0"
-  s.summary          = "A short description of Dismissy."
+  s.summary          = "Dismissy is an objective-C category on UIViewController to add keyboard dismissing to all View Controllers."
   s.description      = <<-DESC
-                       An optional longer description of Dismissy
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
+                       Dismissy is an objective-C category on UIViewController to add keyboard dismissing to all View
+                       Controllers. It automatically resigns all first responders when a user taps outside any active
+                       textfields.
                        DESC
   s.homepage         = "https://github.com/drmaj/Dismissy"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
